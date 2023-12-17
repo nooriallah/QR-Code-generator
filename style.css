@@ -15,8 +15,8 @@
 }
 
 article {
-    width: 500px;
-    min-inline-size: 400px;
+    max-width: 500px;
+    width: 100%;
     background: #fff;
     border-radius: 10px;
     padding: 2rem;
@@ -92,4 +92,12 @@ article button {
 }
 article button:hover {
     background-color: #399fff;
+}
+@media (max-width: 768px) {
+    .container {
+        align-items: start;
+    }
+    article {
+        margin: 3rem 1rem;
+    }
 }
