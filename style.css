@@ -30,6 +30,7 @@ article input {
     width: 100%;
     padding: 1rem;
     border: 1px solid darkblue;
+    outline: none;
     border-radius: 10px;
     font-size: 18px;
     letter-spacing: 2px;
@@ -38,6 +39,7 @@ article input {
 .shake {
     border-color: crimson;
     animation: shake 0.2s linear forwards;
+    -o-animation: shake 0.2s linear forwards;;
 }
 @keyframes shake {
     0% {
@@ -58,8 +60,7 @@ article input {
 }
 
 article input:focus {
-    outline: 1px solid darkcyan;
-
+    border: 1px solid darkgreen;
 }
 article input::placeholder {
     font-size: 14px;
@@ -99,5 +100,11 @@ article button:hover {
     }
     article {
         margin: 3rem 1rem;
+    }
+    article input {
+        font-size: 14px;
+    }
+    article input::placeholder {
+        font-size: 10px;
     }
 }
